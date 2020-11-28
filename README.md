@@ -1,4 +1,4 @@
-# mslearn-epub
+# microsoft-learn-epub
 
 ![](https://docs.microsoft.com/en-us/media/learn/home/hero_background_light.svg)
 

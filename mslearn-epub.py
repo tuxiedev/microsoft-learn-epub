@@ -25,7 +25,7 @@ def download_ebook(book, destination_directory, epubpress_url):
         book = requests.get(
             ('{}/api/v1/books/{}/download'.format(epubpress_url, book.epubpress_id))).content
         f.write(book)
-    
+
 
 def generate_ebook_with_epubpress(book: Book, destination_directory, epubpress_url):
     print('Generating ebook for title {}'.format(book.title))
