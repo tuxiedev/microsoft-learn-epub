@@ -64,7 +64,7 @@ def scrape_lessons_from_learning_path(learning_path_url, destination_directory, 
     base_path = 'https://docs.microsoft.com/en-us/learn'
     r = requests.get(learning_path_url)
     bs = BeautifulSoup(r.text, features="html.parser")
-    links = bs.find_all('a', 'is-block is-undecorated')
+    links = bs.find_all('a', 'is-block text-decoration-none')
     for i in range(len(links)):
         download_lesson_ebook(
             '{}/{}'.format(base_path, links[i]['href'].strip('../../')),
